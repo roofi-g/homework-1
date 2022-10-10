@@ -4,11 +4,11 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-int Number1 = -9;
-int Number2 = -3;
+int Number1 = 5;
+int Number2 = 7;
 
 if(Number1 > Number2) {
-    Console.Write(Number1);
+    Console.Write($"Большее число: {Number1}, меньшее число : {Number2}");
 } else {
-    Console.Write(Number2);
+    Console.Write($"Большее число: {Number2}, меньшее число : {Number1}");
 }
