@@ -19,14 +19,30 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-int number1 = 22;
-int number2 = 3;
-int number3 = 9;
+// int number1 = 22;
+// int number2 = 3;
+// int number3 = 9;
 
-int max = 0;
+// int max = 0;
 
-if (number1 > max) max = number1;
-if (number2 > max) max = number2;
-if (number3 > max) max = number3;
+// if (number1 > max) max = number1;
+// if (number2 > max) max = number2;
+// if (number3 > max) max = number3;
 
-Console.Write($"Максимальное число: {max}");
+// Console.Write($"Максимальное число: {max}");
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+int number = 7;
+
+int result = number % 2;
+
+if (result == 0) {
+    Console.Write($"Да, число является четным");
+} else {
+    Console.Write($"Нет, число не является четным");
+}
