@@ -21,17 +21,37 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int number = 32679;
+// int number = 32679;
 
-int getTheThirdDigit(int number) 
+// int getTheThirdDigit(int number) 
+// {
+//     while (number >= 1000) number /= 10;
+//     int theThirdNumber = number % 10;
+//     return theThirdNumber;
+// }
+
+// if (number >= 0 && number < 100) {
+//     Console.WriteLine("третьей цифры нет");
+// } else {
+//     Console.WriteLine(getTheThirdDigit(number));
+// }
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+int number = 6;
+
+void Programm(int num)
 {
-    while (number >= 1000) number /= 10;
-    int theThirdNumber = number % 10;
-    return theThirdNumber;
+    if(num == 6 || num == 7){
+        Console.WriteLine("да");
+    }
+    else {
+        Console.WriteLine("нет");
+    }
 }
 
-if (number >= 0 && number < 100) {
-    Console.WriteLine("третьей цифры нет");
-} else {
-    Console.WriteLine(getTheThirdDigit(number));
-}
+Programm(number);
