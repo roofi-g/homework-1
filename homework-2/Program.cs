@@ -30,9 +30,8 @@ int getTheThirdDigit(int number)
     return theThirdNumber;
 }
 
-if (number >= 10 && number < 100) {
+if (number >= 0 && number < 100) {
     Console.WriteLine("третьей цифры нет");
 } else {
     Console.WriteLine(getTheThirdDigit(number));
 }
-
