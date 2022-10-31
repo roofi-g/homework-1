@@ -26,7 +26,6 @@ Console.WriteLine($"Количество чисел больше нуля: {coun
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-/*
 float GetNumberFromUser(string message)
 {
     Console.WriteLine(message);
@@ -58,4 +57,4 @@ double valuek2 = GetNumberFromUser("Введите значение k2: ");
 double x = GetXPoint(valueB1, valueK1, valueB2, valuek2);
 double y = GetYPoint(valueB1, valueK1, x);
 
-Console.WriteLine($"Точка пересечения двух прямых: ({x}; {y})"); */
+Console.WriteLine($"Точка пересечения двух прямых: ({x}; {y})");
