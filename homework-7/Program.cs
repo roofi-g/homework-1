@@ -62,62 +62,62 @@ PrintMatrix(matrix);
 
 // 17 -> такого числа в массиве нет
 
-// int GetNumber(string message)
-// {
-//     Console.WriteLine(message);
-//     int result = int.Parse(Console.ReadLine());
-//     return result;
-// }
+int GetNumber(string message)
+{
+    Console.WriteLine(message);
+    int result = int.Parse(Console.ReadLine());
+    return result;
+}
 
-// int[,] InitMatrix(int m, int n)
-// {
-//     int [,] resultMatrix = new int[m,n];
-//     Random rnd = new Random();
+int[,] InitMatrix(int m, int n)
+{
+    int [,] resultMatrix = new int[m,n];
+    Random rnd = new Random();
 
-//     for (int i = 0; i < m; i++)
-//     {
-//         for (int j = 0; j < n; j++)
-//         {
-//             resultMatrix[i,j] = rnd.Next(0,10);
-//         }
-//     }
-//     return resultMatrix;
-// }
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            resultMatrix[i,j] = rnd.Next(0,10);
+        }
+    }
+    return resultMatrix;
+}
 
-// void PrintMatrix(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//         {
-//             Console.Write($"{matrix[i,j]} ");
-//         }
-//         Console.WriteLine();
-//     }
-// }
+void PrintMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i,j]} ");
+        }
+        Console.WriteLine();
+    }
+}
 
-// int GetElement(int[,] matrix, int coordinates)
-// {
-//     int x = (coordinates % 100) / 10;
-//     Console.WriteLine($"x : {x}");
-//     int y = coordinates % 10;
-//     Console.WriteLine($"y : {y}");
-//     return matrix[x-1, y-1];
-// }
+int GetElement(int[,] matrix, int coordinates)
+{
+    int x = (coordinates % 100) / 10;
+    Console.WriteLine($"x : {x}");
+    int y = coordinates % 10;
+    Console.WriteLine($"y : {y}");
+    return matrix[x-1, y-1];
+}
 
-// int m = GetNumber("Введите число m:");
-// int n = GetNumber("Введите число n:");
-// int[,] matrix = InitMatrix(m,n);
-// PrintMatrix(matrix);
+int m = GetNumber("Введите число m:");
+int n = GetNumber("Введите число n:");
+int[,] matrix = InitMatrix(m,n);
+PrintMatrix(matrix);
 
-// try
-// {
-//     Console.WriteLine(GetElement(matrix, GetNumber("Введите двузначное число с координатами в матрице: ")));
-// }
-// catch 
-// {
-//     Console.WriteLine("такого числа в массиве нет");
-// };
+try
+{
+    Console.WriteLine(GetElement(matrix, GetNumber("Введите двузначное число с координатами в матрице: ")));
+}
+catch 
+{
+    Console.WriteLine("такого числа в массиве нет");
+};
 
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
@@ -128,7 +128,6 @@ PrintMatrix(matrix);
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-/*
 int GetNumber(string message)
 {
     Console.WriteLine(message);
@@ -186,4 +185,4 @@ int n = GetNumber("Введите число n:");
 int[,] matrix = InitMatrix(m,n);
 PrintMatrix(matrix);
 
-PrintArithmeticMean(matrix); */
+PrintArithmeticMean(matrix);
