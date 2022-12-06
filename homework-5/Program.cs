@@ -3,7 +3,7 @@
 
 // [345, 897, 568, 234] -> 2
 
-/*  инициализация массива случайными положительными трёхзначными числами.
+  инициализация массива случайными положительными трёхзначными числами.
 int[] InitArray(int length)
 {
     int [] resultArray = new int[length];
@@ -52,7 +52,7 @@ int length = GetNumber("Введите размерность массива");
 int[] arr = InitArray(length);
 PrintArray(arr);
 
-Console.WriteLine($"Количество четных чисел в массиве: {GetEvenNumbers(arr)}"); */
+Console.WriteLine($"Количество четных чисел в массиве: {GetEvenNumbers(arr)}");
 
 
 
@@ -61,7 +61,7 @@ Console.WriteLine($"Количество четных чисел в массив
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-/* инициализация массива случайными числами.
+инициализация массива случайными числами.
 int[] InitArray(int length)
 {
     int [] resultArray = new int[length];
@@ -110,7 +110,7 @@ int length = GetNumber("Введите размерность массива");
 int[] arr = InitArray(length);
 PrintArray(arr);
 
-Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях : {GetSum(arr)}"); */
+Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях : {GetSum(arr)}");
 
 
 
